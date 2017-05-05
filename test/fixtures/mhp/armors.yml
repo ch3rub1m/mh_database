@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  part: 1
+  male: false
+  female: false
+  swordman: false
+  gunner: false
+  defence: 1
+  fire: 1
+  water: 1
+  thunder: 1
+  dragon: 1
+  level: 1
+  skill_systems: 
+  cost: MyText
+
+two:
+  name: MyString
+  part: 1
+  male: false
+  female: false
+  swordman: false
+  gunner: false
+  defence: 1
+  fire: 1
+  water: 1
+  thunder: 1
+  dragon: 1
+  level: 1
+  skill_systems: 
+  cost: MyText
