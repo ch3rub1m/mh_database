@@ -10,7 +10,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170503063109) do
+ActiveRecord::Schema.define(version: 20170517095231) do
+
+  create_table "mhp2_armors", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.integer  "part"
+    t.boolean  "male"
+    t.boolean  "female"
+    t.boolean  "swordman"
+    t.boolean  "gunner"
+    t.integer  "defence"
+    t.integer  "fire"
+    t.integer  "water"
+    t.integer  "thunder"
+    t.integer  "ice"
+    t.integer  "dragon"
+    t.integer  "rare"
+    t.integer  "slot_number"
+    t.json     "skill_systems"
+    t.text     "cost",          limit: 65535
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
+
+  create_table "mhp2_skill_systems", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "mhp2_skills", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.integer  "skill_system_id"
+    t.integer  "required_point"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["skill_system_id"], name: "index_mhp2_skills_on_skill_system_id", using: :btree
+  end
 
   create_table "mhp_armors", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
