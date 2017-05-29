@@ -1,3 +1,4 @@
 class Mhp2::SkillSerializer < ActiveModel::Serializer
-  attributes :id, :name, :skill_system_id, :required_point
+  attributes :id, :name, :required_point
+  belongs_to :skill_system
 end
