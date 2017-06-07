@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  rare: 1
+  slot: 1
+  skill_systems: 
+
+two:
+  name: MyString
+  rare: 1
+  slot: 1
+  skill_systems: 

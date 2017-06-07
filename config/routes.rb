@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   namespace :mhp2 do
+    resources :decorators
+  end
+  namespace :mhp2 do
     resources :armors
   end
   namespace :mhp2 do
