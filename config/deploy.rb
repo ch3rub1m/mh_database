@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock "3.8.1"
+lock "3.9.1"
 
 set :application, "mh_database"
 set :repo_url, "git@github.com:ch3rub1m/mh_database.git"

@@ -1,6 +1,6 @@
 class Mhp::ArmorsController < ApplicationController
   def index
     @armors = Mhp::Armor.all
-    render json: @armors
+    paginate json: @armors
   end
 end
